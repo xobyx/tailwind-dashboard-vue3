@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="flex">
+    <SideBar/>
+    <Channelbar/>
+    <ContentContainer/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ChannelBar from "@/components/ChannelBar";
+import SideBar from "@/components/SideBar";
+import ContentContainer from "@/components/ContentContainer";
 export default {
+  mounted() {
+  },
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Channelbar: ChannelBar,SideBar,ContentContainer
+}
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
