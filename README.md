@@ -1,24 +1,15 @@
-# tailwind
+## Discord-Inspired Dashboard with Tailwind CSS Vue.js3
+[![fireship](https://github.com/fireship-io/)]
+[![Orginal React](https://github.com/fireship-io/tailwind-dashboard)]
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e5670c2e-7a9f-4be2-955b-6bf8608ddc62/deploy-status)](https://app.netlify.com/sites/tailwind-dashboard-demo/deploys)
 
-## Project setup
-```
-pnpm install
-```
+- Watch the [Tailwind Basics Tutorial]() on YouTube
+- [Live demo](https://tailwind-dashboard-demo.netlify.app/)
 
-### Compiles and hot-reloads for development
-```
-pnpm run serve
-```
+#### Dark mode
 
-### Compiles and minifies for production
-```
-pnpm run build
-```
+![Dark mode](./dark-mode.png)
 
-### Lints and fixes files
-```
-pnpm run lint
-```
+#### Light mode
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![Light mode](./light-mode.png)
