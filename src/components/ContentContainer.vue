@@ -1,7 +1,6 @@
-/* eslint-disable */
 <template>
   <div class='content-container'>
-    <TopNavigation/>
+    <TopNavigation title="Tailwind-css"/>
     <div class='content-list'>
 
       <PostItem name='Leon' timestamp='one week ago' text="Lorem ipsum dolor. " />
@@ -55,13 +54,10 @@
   </div>
 
 </template>
-<script>
+<script setup>
 import PostItem from "@/components/mini/PostItem";
 import TopNavigation from "@/components/mini/TopNavigation";
 import BottomBar from "@/components/mini/BottomBar";
 
-export default {
-  name: 'ContentContainer',
-  components: {BottomBar, TopNavigation, PostItem}
-}
+
 </script>

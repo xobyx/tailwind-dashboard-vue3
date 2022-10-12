@@ -1,7 +1,7 @@
 <template>
   <div class='dropdown'>
     <div @click="expanded=!expanded" class='dropdown-header'>
-    <component :is="expanded?'ChevronDownIcon':'ChevronRightIcon'" class="text-accent text-opacity-80 my-auto mr-1" />
+    <component :is="expanded?ChevronDownIcon:ChevronRightIcon" class="text-accent text-opacity-80 my-auto mr-1" />
     <h5
         :class="expanded ? 'dropdown-header-text-selected' : 'dropdown-header-text'"
     >
@@ -20,21 +20,17 @@
   </div>
 </template>
 
-<script>
+<script setup>
 //import { PlusIcon,HashtagIcon,ChevronDownIcon,ChevronRightIcon} from '@heroicons/vue/solid'
+// eslint-disable-next-line no-unused-vars
 import {PlusIcon,HashIcon,ChevronDownIcon,ChevronRightIcon} from '@zhuowenli/vue-feather-icons'
-export default {
-  name: "DropDown",
-  components:{HashIcon,PlusIcon,ChevronDownIcon,ChevronRightIcon},
-  data(){
-    return {
-      expanded: false
-    }
-  },
-  props:{
-    header:String,selections:Array
-  }
-}
+
+
+import { ref } from 'vue'
+const expanded =ref(false);
+// eslint-disable-next-line no-undef
+defineProps({  header:String,selections:Array})
+
 </script>
 
 <style scoped>

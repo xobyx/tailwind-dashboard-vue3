@@ -4,11 +4,10 @@
     <SearchIcon size='18' class='text-secondary my-auto'/>
   </div>
 </template>
-<script>
+<script setup>
 //import { SearchIcon} from '@heroicons/vue/solid'
 import {SearchIcon} from '@zhuowenli/vue-feather-icons'
-export default {
-  components:{SearchIcon},
-  name: 'SearchItem'
-}
+
+
+
 </script>

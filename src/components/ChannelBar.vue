@@ -11,21 +11,13 @@
     </div>
   </div>
 </template>
-<script>
+<script setup>
 /* eslint-disable */
 
 import DropDown from "@/components/mini/DropDown";
-const topics = ['tailwind-css', 'react'];
+const topics = ['tailwind-css', 'vue.js'];
 const questions = ['jit-compilation', 'purge-files', 'dark-mode'];
 const random = ['variants', 'plugins'];
 
-export default {
-  name: 'ChannelBar',
-  components: {DropDown},
-  data(){
-    return{
-      topics,questions,random
-    }
-  }
-}
+
 </script>

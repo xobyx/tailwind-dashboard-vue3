@@ -14,22 +14,19 @@
   </div>
 
 </template>
-<script>
-export default {
-  computed()
-  {
+<script setup>
 
-  },
-  methods:{
-    randomAvatar(){
+
+function randomAvatar(){
       return "https://avatars.dicebear.com/api/open-peeps/"+ Math.round(Math.random() * 100) +".svg";
     }
-  },
-  name: 'PostItem',
-  props:{
+
+
+// eslint-disable-next-line no-undef
+  defineProps({
     name:String,
     timestamp:String,
     text:String,
-  }
-}
+  })
+
 </script>

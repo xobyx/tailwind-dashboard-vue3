@@ -8,11 +8,8 @@
     <input type='text' placeholder='Enter message...' class='bottom-bar-input'/>
   </div>
 </template>
-<script>
+<script setup>
 //import {PlusIcon} from '@heroicons/vue/solid'
 import {PlusIcon} from '@zhuowenli/vue-feather-icons'
-export default {
-  name: 'BottomBar',
-  components:{PlusIcon}
-}
+
 </script>

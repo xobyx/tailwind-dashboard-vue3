@@ -12,21 +12,17 @@
 
 </template>
 
-<script>
+<script setup>
+//import {ref} from "vue"
 import SearchItem from "@/components/mini/SearchItem";
 import ThemeIcon from "@/components/mini/ThemeIcon";
 //import {UserCircleIcon,BellIcon,HashtagIcon} from "@vue-hero-icons/solid"
 //import {} from '@heroicons/vue/solid/HashtagIcon'
 //import {UserCircleIcon,BellIcon} from '@heroicons/vue/24/solid'
 import {HashIcon,BellIcon,UserXIcon} from '@zhuowenli/vue-feather-icons'
-export default {
-  name: "TopNavigation",
-  components: {ThemeIcon, SearchItem,UserXIcon,BellIcon,HashIcon},
-  data(){
-    return {
-      title:"tailwind - css"
-    }
-  }
-}
+// eslint-disable-next-line no-undef
+defineProps(['title'])
+//const title=ref("tailwind-css");
+
 </script>
 
