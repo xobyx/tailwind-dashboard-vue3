@@ -14,7 +14,7 @@
     <div class='dropdown-selection' v-for="sel in selections" :key="sel" @click="$emit('dropdown_selection',sel)">
 
         <HashIcon size='24' class='text-gray-400' :class="{'text-green-400': i.split('>')[1]==sel}" />
-        <h5 class='dropdown-selection-text'>{{sel}}</h5>
+        <h5 class='dropdown-selection-text' :class="{'text-green-400': i.split('>')[1]==sel}">{{sel}}</h5>
     </div>
     </template>
   </div>
