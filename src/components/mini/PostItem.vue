@@ -1,7 +1,7 @@
 <template>
   <div class='post'>
     <div class='avatar-wrapper'>
-      <img :src="randomAvatar()" alt='' class='avatar' />
+      <img :src="randomAvatar2()" alt='' class='avatar' />
     </div>
 
     <div class='post-content'>
@@ -17,10 +17,13 @@
 <script setup>
 
 
-function randomAvatar(){
-      return "https://avatars.dicebear.com/api/open-peeps/"+ Math.round(Math.random() * 100) +".svg";
-    }
-
+//function randomAvatar(){
+//      return "https://avatars.dicebear.com/api/open-peeps/"+ Math.round(Math.random() * 100) +".svg";
+//    }
+function randomAvatar2()
+{
+  return "https://robohash.org/" + [ 'male', 'female' ][Math.round(Math.random())]+ Math.round(Math.random()*100)
+}
 
 // eslint-disable-next-line no-undef
   defineProps({

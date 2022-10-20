@@ -19,4 +19,5 @@ import {PlusIcon,HashIcon,FolderIcon,CloudLightningIcon,MusicIcon} from '@zhuowe
 import SideBarIcon from "./mini/SideBarIcon";
 
 var selected = ref(0);
+
 </script>

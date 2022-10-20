@@ -1,6 +1,6 @@
 <template>
   <div class='content-container'>
-    <TopNavigation title="Tailwind-css"/>
+    <TopNavigation :title="channelp"/>
     <div class='content-list'>
 
       <PostItem name='Leon' timestamp='one week ago' text="Lorem ipsum dolor. " />
@@ -55,9 +55,10 @@
 
 </template>
 <script setup>
+import {inject} from "vue"
 import PostItem from "@/components/mini/PostItem";
 import TopNavigation from "@/components/mini/TopNavigation";
 import BottomBar from "@/components/mini/BottomBar";
-
+const { channelp } = inject('channelp')
 
 </script>

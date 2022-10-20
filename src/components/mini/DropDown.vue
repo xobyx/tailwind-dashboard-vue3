@@ -10,13 +10,13 @@
     <PlusIcon size='12' class='text-accent text-opacity-80 my-auto ml-auto' />
   </div>
 
-    <slot v-if="expanded&&selections">
-    <div class='dropdown-selection' v-for="sel in selections" :key="sel">
+    <template v-if="expanded&&selections">
+    <div class='dropdown-selection' v-for="sel in selections" :key="sel" @click="$emit('dropdown_selection',sel)">
 
-        <HashIcon size='24' class='text-gray-400' />
+        <HashIcon size='24' class='text-gray-400' :class="{'text-green-400': i.split('>')[1]==sel}" />
         <h5 class='dropdown-selection-text'>{{sel}}</h5>
     </div>
-    </slot>
+    </template>
   </div>
 </template>
 
@@ -29,7 +29,9 @@ import {PlusIcon,HashIcon,ChevronDownIcon,ChevronRightIcon} from '@zhuowenli/vue
 import { ref } from 'vue'
 const expanded =ref(false);
 // eslint-disable-next-line no-undef
-defineProps({  header:String,selections:Array})
+defineProps({ header: String, selections: Array,i:String })
+// eslint-disable-next-line no-undef
+defineEmits(['dropdown_selection'])
 
 </script>
 
