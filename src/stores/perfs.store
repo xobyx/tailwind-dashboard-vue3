@@ -1,0 +1,30 @@
+import { defineStore } from 'pinia'
+
+export const usePrefs = defineStore('perfs', {
+  state: () => ({
+    /** @type {{ text: string, id: number, isFinished: boolean }[]} */
+    isDarkMode: ref(JSON.parse(localStorage.getItem('dark-theme'))|| false),
+    /** @type {'all' | 'finished' | 'unfinished'} */
+    channelp: '',
+    // type will be automatically inferred to number
+    nextId: 0,
+    count:0,
+  }),
+  getters: {
+  	
+  },
+  actions: {
+    // any amount of arguments, return a promise or not
+     toggleTheme() {
+      this.isDarkMode = !this.isDarkMode;
+      if (this.isDarkMode) {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+    },
+  },
+})
+

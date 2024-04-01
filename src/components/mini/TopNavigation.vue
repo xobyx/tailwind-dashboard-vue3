@@ -14,8 +14,8 @@
 
 <script setup>
 //import {ref} from "vue"
-import SearchItem from "@/components/mini/SearchItem";
-import ThemeIcon from "@/components/mini/ThemeIcon";
+import SearchItem from "@/components/mini/SearchItem.vue";
+import ThemeIcon from "@/components/mini/ThemeIcon.vue";
 //import {UserCircleIcon,BellIcon,HashtagIcon} from "@vue-hero-icons/solid"
 //import {} from '@heroicons/vue/solid/HashtagIcon'
 //import {UserCircleIcon,BellIcon} from '@heroicons/vue/24/solid'

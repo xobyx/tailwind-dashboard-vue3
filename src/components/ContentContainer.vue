@@ -56,9 +56,9 @@
 </template>
 <script setup>
 import {inject} from "vue"
-import PostItem from "@/components/mini/PostItem";
-import TopNavigation from "@/components/mini/TopNavigation";
-import BottomBar from "@/components/mini/BottomBar";
+import PostItem from "@/components/mini/PostItem.vue";
+import TopNavigation from "@/components/mini/TopNavigation.vue";
+import BottomBar from "@/components/mini/BottomBar.vue";
 const { channelp } = inject('channelp')
 
 </script>

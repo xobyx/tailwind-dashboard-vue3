@@ -9,9 +9,9 @@
 <script setup>
 import { provide, ref, watchEffect } from 'vue'
 
-import ChannelBar from "@/components/ChannelBar";
-import SideBar from "@/components/SideBar";
-import ContentContainer from "@/components/ContentContainer";
+import ChannelBar from "@/components/ChannelBar.vue";
+import SideBar from "@/components/SideBar.vue";
+import ContentContainer from "@/components/ContentContainer.vue";
 const theme = ref(JSON.parse(localStorage.getItem('dark-theme'))|| 0)
 function updateTheme() {
   theme.value = !theme.value;

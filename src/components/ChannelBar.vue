@@ -15,7 +15,7 @@
 import {inject} from 'vue'    
 /* eslint-disable */
 
-import DropDown from "@/components/mini/DropDown";
+import DropDown from "@/components/mini/DropDown.vue";
 const topics = ['tailwind-css', 'vue.js'];
 const questions = ['jit-compilation', 'purge-files', 'dark-mode'];
 const random = ['variants', 'plugins'];

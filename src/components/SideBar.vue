@@ -16,7 +16,7 @@
 <script setup>
 import { ref } from 'vue';
 import {PlusIcon,HashIcon,FolderIcon,CloudLightningIcon,MusicIcon} from '@zhuowenli/vue-feather-icons'
-import SideBarIcon from "./mini/SideBarIcon";
+import SideBarIcon from "./mini/SideBarIcon.vue";
 
 var selected = ref(0);
 
